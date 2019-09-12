@@ -1,0 +1,8 @@
+article#app-container {
+  background-color: blueviolet;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 90%;
+  height: 90%;
+}

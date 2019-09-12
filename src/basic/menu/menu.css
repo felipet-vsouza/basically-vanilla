@@ -1,4 +1,17 @@
 aside {
-    background-color: lime;
-    color: pink;
+  background-color: lime;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 10%;
+  height: 90%;
+}
+
+aside > li {
+  list-style: none;
+}
+
+aside > li > a {
+  color: pink;
+  text-decoration: none;
 }

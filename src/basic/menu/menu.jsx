@@ -6,7 +6,7 @@ import { node } from 'jsx-pragmatic';
 export function Menu({ menuNodes }) {
     return (
         <aside>
-            {menuNodes.forEach(menuNode =>
+            {menuNodes.map(menuNode =>
                 <li>
                     <a href={menuNode.href}>
                         {menuNode.name}

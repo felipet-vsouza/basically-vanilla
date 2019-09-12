@@ -3,6 +3,7 @@
 import { dom, node } from 'jsx-pragmatic';
 import { Header } from './header/header.jsx';
 import { Menu } from './menu/menu.jsx';
+import './basic.css';
 
 function name() {
     return 'VanillaJS Try-Out'
@@ -21,7 +22,9 @@ export function App() {
         <div id="super-container">
             <Header name={name()} />
             <Menu menuNodes={nodes()} />
-            <article id="app-container" />
+            <article id="app-container">
+                This is where your app goes
+            </article>
         </div>
     ).render(dom());
 }
