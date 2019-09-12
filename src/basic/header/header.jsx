@@ -1,12 +1,12 @@
 /** @jsx node */
 
 import './header.css';
-import { node, dom } from 'jsx-pragmatic';
+import { node } from 'jsx-pragmatic';
 
-export default function render(name) {
+export function Header({ name }) {
     return (
         <header>
             Welcome to {name} app
         </header>
-    ).render(dom());
+    );
 }

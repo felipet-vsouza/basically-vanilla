@@ -1,14 +1,18 @@
 /** @jsx node */
 
 import './menu.css';
-import { node, dom } from 'jsx-pragmatic';
+import { node } from 'jsx-pragmatic';
 
-export default function render(nodes) {
+export function Menu({ menuNodes }) {
     return (
         <aside>
-            {nodes.forEach(node =>
-                <li><a href={node.href}> {node.name} </a></li>
+            {menuNodes.forEach(menuNode =>
+                <li>
+                    <a href={menuNode.href}>
+                        {menuNode.name}
+                    </a>
+                </li>
             )}
         </aside>
-    ).render(dom());
+    );
 }
