@@ -9,19 +9,11 @@ function name() {
     return 'VanillaJS Try-Out'
 }
 
-function nodes() {
-    return [
-        { name: 'Homepage', href: '/' },
-        { name: 'Documentation', href: '/docs/' },
-        { name: 'About the authors', href: '/authors/' }
-    ]
-}
-
-export function App() {
+export function Basic(router, nodes) {
     return (
         <div id="super-container">
             <Header name={name()} />
-            <Menu menuNodes={nodes()} />
+            <Menu router={router} menuNodes={nodes} />
             <article id="app-container">
                 This is where your app goes
             </article>
