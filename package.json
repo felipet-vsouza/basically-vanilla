@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/felipet-vsouza/vanillajs-tryout#readme",
   "dependencies": {
-    "@babel/core": "^7.6.0"
+    "@babel/core": "^7.6.0",
+    "navigo": "^7.1.2"
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.2.0",
