@@ -7,11 +7,11 @@ aside {
   height: 90%;
 }
 
-aside > li {
+aside>li {
   list-style: none;
 }
 
-aside > li > a {
+aside>li>a {
   color: pink;
   text-decoration: none;
 }
