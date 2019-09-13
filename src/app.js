@@ -9,8 +9,8 @@ export class App {
         this.nodes = nodes;
     }
 
-    initialize() {
-        body().appendChild(Basic(this.router, this.nodes))
+    initialize(renderApproach) {
+        body().appendChild(Basic(this.router, this.nodes, renderApproach))
         this.router.updatePageLinks();
         this.router.resolve();
     }

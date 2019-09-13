@@ -2,18 +2,17 @@
 
 import './menu.css';
 import { node } from 'jsx-pragmatic';
-import { appContainer } from './../helper/dom.js';
 
-function registerRoutes(router, menuNodes) {
-    menuNodes.forEach(menuNode => register(router, menuNode));
+function registerRoutes(router, menuNodes, renderApproach) {
+    menuNodes.forEach(menuNode => register(router, menuNode, renderApproach));
 }
 
-function register(router, newNode) {
-    router.on(newNode.href, () => appContainer().innerHTML = newNode.component());
+function register(router, newNode, renderApproach) {
+    router.on(newNode.href, renderApproach(newNode.component));
 }
 
-export function Menu({ router, menuNodes }) {
-    registerRoutes(router, menuNodes);
+export function Menu({ router, menuNodes, renderApproach }) {
+    registerRoutes(router, menuNodes, renderApproach);
     return (
         <aside>
             {
