@@ -7,4 +7,4 @@ This project consists of a proof of concept whose purpose is to unite basic comm
 - [**Vanilla base**](https://github.com/felipet-vsouza/basically-vanilla/tree/vanilla-raw): Basic app without most of the dependencies.
 - [**Vanilla app**](https://github.com/felipet-vsouza/basically-vanilla/tree/vanilla): App whose main project components were built using vanilla Javascript with JSX.
 - [**React app**](https://github.com/felipet-vsouza/basically-vanilla/tree/react): App whose main project components were built using React with JSX.
-- [**Vue app**](https://github.com/felipet-vsouza/basically-vanilla/tree/vanilla): App whose main project components were build using Vue.js.
+- [**Vue app**](https://github.com/felipet-vsouza/basically-vanilla/tree/vue): App whose main project components were build using Vue.js.
