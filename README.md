@@ -1,7 +1,7 @@
 # :white_flower: Basically Vanilla :white_flower:
 
 ## About the project
-This project consists of a proof of concept whose purpose is to unite basic common VanillaJS-ish apps with different front-end libraries, such as React and Vue.
+This project consists of a proof of concept whose purpose is to unite basic common VanillaJS-ish components with different front-end libraries, such as React and Vue.
 
 ## Exploring
 - [**Vanilla base**](https://github.com/felipet-vsouza/basically-vanilla/tree/vanilla-raw): Basic app without most of the dependencies.
