@@ -1,6 +1,10 @@
 import Navigo from 'navigo';
-import { Basic } from './basic/basic.jsx';
-import { body } from './basic/helper/dom.js';
+import {
+    Basic
+} from './basic/basic.jsx';
+import {
+    body
+} from './basic/helper/dom.js';
 
 export class App {
 
