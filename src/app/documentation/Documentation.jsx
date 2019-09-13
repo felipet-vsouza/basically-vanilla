@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 
-class ReactApp extends Component {
+class Documentation extends Component {
+
     constructor() {
         super();
 
         this.state = {
-            title: 'Hi! I\'m a React App :D'
+            title: 'Documentation'
         };
     }
 
     render() {
         const { title } = this.state;
         return (
-            <div>
-                <h1>{title}</h1>
-            </div>
+            <h1>{title}</h1>
         );
     }
 }
 
-export default ReactApp;
+export default Documentation;
