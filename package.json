@@ -20,6 +20,7 @@
   "homepage": "https://github.com/felipet-vsouza/vanillajs-tryout#readme",
   "dependencies": {
     "@babel/core": "^7.6.0",
+    "navigo": "^7.1.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2"
   },
