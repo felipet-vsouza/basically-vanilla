@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {
+    CleanWebpackPlugin
+} = require('clean-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     mode: 'development',
@@ -19,11 +22,11 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'VanillaJS Try-out'
-        })
+        }),
+        new VueLoaderPlugin()
     ],
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.css$/,
                 use: [
                     'style-loader',
@@ -43,6 +46,10 @@ module.exports = {
                         ]
                     }
                 }
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
     }
